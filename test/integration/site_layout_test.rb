@@ -33,7 +33,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
     assert_select "a[href=?]", users_path
     assert_select "a[href=?]", user_path(@user)
     assert_select "a[href=?]", edit_user_path(@user)
-    assert_select "a[href=?]", signup_path
+    #assert_select "a[href=?]", signup_path
     assert_select "a[href=?]", "http://news.railstutorial.org/"
     get contact_path
     assert_select "title", full_title("Contact")
